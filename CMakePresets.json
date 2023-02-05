@@ -53,6 +53,27 @@
                ]
             }
          }
-      }
-   ]
+      },
+      {
+        "name": "DM3730",
+        "displayName": "DM3730",
+        "description": "Target DM3730 ti davinci",
+        "inherits": "base",
+        "toolchainFile": "${sourceDir}\\MyDM3730Toolchain.cmake",
+        "cacheVariables": {
+           "CMAKE_BUILD_TYPE": "Release",
+           "MYMODE": {
+              "type": "STRING",
+              "value": "DM3730"
+           }
+        },
+        "vendor": {
+           "microsoft.com/VisualStudioSettings/CMake/1.0": {
+              "hostOS": [
+                 "Windows"
+              ]
+           }
+        }
+     }
+  ]
 }
