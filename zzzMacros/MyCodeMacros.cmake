@@ -49,12 +49,11 @@ function(my_add_compile_options _target)
       target_compile_options(${_target} PRIVATE "/Ot")
       target_compile_options(${_target} PRIVATE "/Oi")
 
-      target_compile_options(${_target} PRIVATE "/MT")
+      #target_compile_options(${_target} PRIVATE "/MT")
       target_compile_options(${_target} PRIVATE "/GS-")
       target_compile_options(${_target} PRIVATE "/Gd")
 
       target_compile_options(${_target} PRIVATE "/EHsc")
-      target_compile_options(${_target} PRIVATE "/MT")
       target_compile_options(${_target} PRIVATE "/Zc:wchar_t")
       target_compile_options(${_target} PRIVATE "/Zc:inline")
 
